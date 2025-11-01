@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hobbies – Bram Willems</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome icons for social links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-7qN4gZX3aAnUP6YrR5+ZPtqU0n2Vdyd2b6phc8lw8rL8ErIgFEjG6w5L2dMzp47Wn9ib7ljkvwY9gKXfS9yxgw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      :root {
+        --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        --text-color: #212529;
+        --accent-color: #6fa8ff;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: var(--font-family);
+      }
+
+      body {
+        min-height: 100vh;
+        overflow-x: hidden;
+        position: relative;
+        color: var(--text-color);
+      }
+      /* pastel background with gentle radial gradients */
+      body::before {
+        content: "";
+        position: absolute;
+        top: -10%;
+        left: -10%;
+        width: 120%;
+        height: 210%;
+        background:
+          radial-gradient(circle at 20% 30%, #e0c8ff40, transparent 60%),
+          radial-gradient(circle at 80% 70%, #b5e3ff40, transparent 60%),
+          radial-gradient(circle at 50% 90%, #ffcce540, transparent 60%);
+        filter: blur(120px);
+        z-index: 0;
+      }
+      /* Glass-like container for the main content */
+      .main-box {
+        position: relative;
+        z-index: 1;
+        max-width: 1000px;
+        width: 90%;
+        margin: 25px auto;
+        padding: 20px 20px 80px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      }
+      /* Section spacing */
+      .hobby-section {
+        margin-bottom: 2.5rem;
+      }
+      .hobby-section h2 {
+        margin-bottom: 0.5rem;
+      }
+      .hobby-section p {
+        line-height: 1.6;
+      }
+      /* Image containers */
+      .image-box {
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      }
+      .hobby-img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+      }
+      .wide-image {
+        width: 350px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+      }
+      .small-image {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+      }
+      /* Footer */
+      footer {
+        background: rgba(255, 255, 255, 0.85);
+        padding: 20px;
+        margin-top: 40px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        color: var(--text-color);
+      }
+      .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      .footer-container h3,
+      .footer-container h4 {
+        margin-bottom: 10px;
+      }
+      .footer-container p,
+      .footer-container li {
+        margin-bottom: 5px;
+      }
+      .footer-container a {
+        color: #0d6efd;
+        text-decoration: none;
+      }
+      .footer-container a:hover {
+        text-decoration: underline;
+      }
+      .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.9rem;
+        color: rgba(0, 0, 0, 0.6);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="../index.html">Resume</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="../subpages/CV.html">Resume</a>
+            <a class="nav-link" href="../subpages/ervargingen.html">Experiences</a>
+            <a class="nav-link" href="../index.html">About me</a>
+            <a class="nav-link active" aria-current="page" href="#">Hobbies</a>
+            <a class="nav-link" href="../subpages/contactme.html">Contact me</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <main class="main-box">
+      <!-- Reading Books -->
+      <section class="hobby-section d-flex flex-column flex-md-row align-items-start">
+        <article class="flex-fill pe-md-4">
+          <h2>Reading Books</h2>
+          <p>
+            I love reading books, especially in the fantasy and science fiction
+            genres. Specifically manga, manhwa, manhua and light novels. One of
+            my favorite series is <em>"Infinite Mage,"</em> which combines elements of
+            magic, adventure, and intricate world-building. The story follows a
+            young protagonist who accidentally overheard a mage talk about magic
+            and he got so curious he jumped over a wall to talk to him. After
+            that he learned magic himself. This story is amazing because it uses
+            mathematical concepts to explain how magic works in its universe,
+            making it a unique and intellectually stimulating read.
+          </p>
+        </article>
+        <!-- Book covers carousel -->
+        <div class="d-flex flex-row flex-wrap gap-3 mt-3 mt-md-0">
+          <div class="image-box" style="width: 250px; height: 250px;">
+            <div id="booksCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+              <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                  <img src="../assets/img/infinite mage.png" class="d-block w-100 h-100" alt="Cover of the book 'Infinite Mage' showing a magical figure with glowing symbols" style="object-fit: cover;" />
+                </div>
+                <div class="carousel-item h-100">
+                  <img src="../assets/img/Solo max level newbie.webp" class="d-block w-100 h-100" alt="Alternate cover of 'Infinite Mage' featuring mystical artwork" style="object-fit: cover;" />
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#booksCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#booksCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Going to the Gym -->
+      <section class="hobby-section d-flex flex-column flex-md-row align-items-start">
+        <article class="flex-fill pe-md-4">
+          <h2>Going to the Gym</h2>
+          <p>
+            Working out is really important to me because it helps me stay
+            healthy and feel good. I usually go to the gym about three times a
+            week, where I focus on weight training. I enjoy lifting weights
+            because it makes me feel stronger and more confident. Overall, going
+            to the gym is a great way for me to relieve stress and maintain a
+            balanced lifestyle.
+          </p>
+        </article>
+      </section>
+
+      <!-- Playing Video Games -->
+      <section class="hobby-section d-flex flex-column flex-md-row align-items-start">
+        <article class="flex-fill pe-md-4">
+          <h2>Playing Video Games</h2>
+          <p>
+            Video games are a fun way for me to unwind and connect with friends.
+            These days I mostly enjoy virtual reality games, as I have a VR
+            headset. Some favorites include <em>Blade and Sorcery</em> and <em>VTOL VR</em>.
+            On PC I play more military simulation games such as <em>Squad</em> and
+            <em>Arma III</em>.
+          </p>
+        </article>
+        <!-- Video games carousel -->
+        <div class="d-flex flex-row flex-wrap gap-3 mt-3 mt-md-0">
+          <div class="wide-image" style="width: 350px; height: 200px;">
+            <div id="gamesCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+              <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                  <img src="../assets/img/Blade and Sorcery.jpg" class="d-block w-100 h-100" alt="Blade and Sorcery VR game screenshot" style="object-fit: cover;" />
+                </div>
+                <div class="carousel-item h-100">
+                  <img src="../assets/img/Squad.webp" class="d-block w-100 h-100" alt="Squad game artwork" style="object-fit: cover;" />
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#gamesCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#gamesCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="../assets/img/favicon.ico" alt="Site logo" />
+          <h3>Bram Willems</h3>
+          <p>Front-end Developer & Programmer</p>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <a href="mailto:r1100223@student.thomasmore.be"
+                >r1100223@student.thomasmore.be</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/CodingWithBram" target="_blank"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h4>Follow Me</h4>
+          <ul>
+            <li>
+              <a href="https://github.com/CodingWithBram" target="_blank"
+                ><i class="fa-brands fa-github"></i> GitHub</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Bram Willems. All rights reserved.</p>
+      </div>
+
+      <script>
+        // Update year automatically
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

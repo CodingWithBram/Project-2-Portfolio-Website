@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resume – Bram Willems</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+      /* Light theme with a gentle pastel radial‑gradient background */
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: #fff5f8; /* soft pinkish-cream base */
+  color: #2b2b2b;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 110%;
+  height: 110%;
+  background:
+    radial-gradient(circle at 25% 25%, #ffd1dcd7, transparent 60%), /* light rosy pink */
+    radial-gradient(circle at 75% 30%, #b8e0ffd7, transparent 65%), /* baby blue */
+    radial-gradient(circle at 60% 80%, #ffe7b6d7, transparent 70%), /* pastel cream yellow */
+    radial-gradient(circle at 15% 85%, #ffcce5d7, transparent 70%); /* extra soft pink warmth */
+  filter: blur(80px);
+  z-index: -1;
+}
+      /* Cards: soft white background with subtle transparency */
+      .card.bg-dark {
+        background-color: rgba(255, 255, 255, 0.8) !important;
+        color: #212529;
+      }
+      .section-title {
+        margin-bottom: 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        padding-bottom: 0.5rem;
+      }
+      footer {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #212529;
+      }
+      footer a {
+        color: #0d6efd;
+        text-decoration: none;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">Resume</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" href="#">Resume</a>
+            <a class="nav-link" href="../subpages/ervargingen.html">Experiences</a>
+            <a class="nav-link" href="../index.html">About me</a>
+            <a class="nav-link" href="../subpages/hobbies.html">Hobbies</a>
+            <a class="nav-link" href="../subpages/contactme.html">Contact me</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main content area -->
+    <div class="container-fluid py-4">
+      <div class="row g-4">
+        <!-- Aside with contact, education, skills, languages -->
+        <aside class="col-lg-3">
+          <!-- Contact Info -->
+          <div class="card bg-dark shadow-sm mb-4">
+            <div class="card-body">
+              <h5 class="card-title section-title">
+                <i class="fa-solid fa-address-book me-2"></i>Contact
+              </h5>
+              <p class="mb-2">
+                <i class="fa-solid fa-phone me-2"></i> +32 470 42 39 69
+              </p>
+              <p class="mb-2">
+                <i class="fa-solid fa-envelope me-2"></i>
+                <a
+                  href="mailto:r1100223@student.thomasmore.be"
+                  class="link-dark"
+                  >r1100223@student.thomasmore.be</a
+                >
+              </p>
+              <p class="mb-2">
+                <i class="fa-brands fa-linkedin me-2"></i>
+                <a
+                  href="https://www.linkedin.com/in/bram-willems-800617385/"
+                  target="_blank"
+                  class="link-dark"
+                  >LinkedIn</a
+                >
+              </p>
+              <p class="mb-0">
+                <i class="fa-brands fa-github me-2"></i>
+                <a
+                  href="https://github.com/CodingWithBoris"
+                  target="_blank"
+                  class="link-dark"
+                  >GitHub</a
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Education -->
+          <div class="card bg-dark shadow-sm mb-4">
+            <div class="card-body">
+              <h5 class="card-title section-title">
+                <i class="fa-solid fa-graduation-cap me-2"></i>Education
+              </h5>
+              <div class="mb-3">
+                <h6 class="fw-bold mb-1">Graduate Programming</h6>
+                <p class="mb-0">
+                  <i class="fa-solid fa-school me-1"></i> Thomas More Turnhout
+                  <span class="d-block small text-muted">2025 – 2027</span>
+                </p>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Website Designer</h6>
+                <p class="mb-0">
+                  <i class="fa-solid fa-laptop-code me-1"></i> CVO Turnhout
+                  <span class="d-block small text-muted">2025</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Skills -->
+          <div class="card bg-dark shadow-sm mb-4">
+            <div class="card-body">
+              <h5 class="card-title section-title">
+                <i class="fa-solid fa-code me-2"></i>Skills
+              </h5>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1">
+                  <i class="fa-brands fa-bootstrap me-2 text-info"></i>Bootstrap
+                </li>
+                <li class="mb-1">
+                  <i class="fa-solid fa-code me-2 text-warning"></i>C#
+                </li>
+                <li class="mb-1">
+                  <i class="fa-brands fa-css3-alt me-2 text-primary"></i>CSS
+                </li>
+                <li class="mb-1">
+                  <i class="fa-brands fa-git-alt me-2 text-danger"></i>Git & GitHub
+                </li>
+                <li class="mb-1">
+                  <i class="fa-brands fa-html5 me-2 text-danger"></i>HTML
+                </li>
+                <li class="mb-1">
+                  <i class="fa-brands fa-js me-2 text-warning"></i>JavaScript
+                </li>
+                <li class="mb-1">
+                  <i class="fa-solid fa-database me-2 text-success"></i>MongoDB
+                </li>
+                <li class="mb-1">
+                  <i class="fa-solid fa-database me-2 text-success"></i>MSSQL
+                </li>
+                <li class="mb-1">
+                  <i class="fa-brands fa-node-js me-2 text-success"></i>Node.js
+                </li>
+                <li class="mb-1">
+                  <i class="fa-solid fa-people-group me-2 text-info"></i>Team Collaboration
+                </li>
+                <li class="mb-1">
+                  <i class="fa-solid fa-file-lines me-2 text-info"></i>Technical Documentation
+                </li>
+                <li>
+                  <i class="fa-solid fa-code me-2 text-warning"></i>TypeScript
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Languages -->
+          <div class="card bg-dark shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title section-title">
+                <i class="fa-solid fa-language me-2"></i>Languages
+              </h5>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1">
+                  <i class="fa-solid fa-flag me-2 text-primary"></i>Dutch
+                  <span class="text-muted small">– Native</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-flag-usa me-2 text-primary"></i>English
+                  <span class="text-muted small">– Professional Proficiency</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+        <!-- Main column: about, experience, projects -->
+        <main class="col-lg-9">
+          <!-- About Me -->
+          <section id="about" class="mb-4">
+            <div class="card bg-dark shadow-sm">
+              <div class="card-body">
+                <h2 class="section-title">
+                  <i class="fa-solid fa-user me-2"></i>About Me
+                </h2>
+                <p class="mb-0">
+                  Passionate and detail‑oriented coder skilled in turning ideas
+                  into clean, functional projects. Proficient in C#, JavaScript,
+                  TypeScript, Node.js, HTML, CSS, Bootstrap, and databases like
+                  MongoDB and MSSQL. Quick to learn new tools and frameworks,
+                  with experience in Git, technical documentation, and team
+                  collaboration. Methodical problem‑solver who thrives in
+                  focused environments and values respectful, productive
+                  teamwork.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- Work Experience -->
+          <section id="experience" class="mb-4">
+            <div class="card bg-dark shadow-sm">
+              <div class="card-body">
+                <h2 class="section-title">
+                  <i class="fa-solid fa-briefcase me-2"></i>Work Experience
+                </h2>
+                <div class="mb-3">
+                  <h3 class="h5 fw-bold">Factory Operator</h3>
+                  <h4 class="h6 text-muted mb-3">
+                    <i class="fa-solid fa-building me-2"></i>Versatelier – 2025
+                  </h4>
+                  <ul class="mb-0">
+                    <li>Assisted in cooking food for hundreds of people.</li>
+                    <li>
+                      Operated kitchen equipment safely and efficiently to
+                      prepare meals according to established recipes and
+                      standards.
+                    </li>
+                    <li>
+                      Maintained a clean and organized work environment to
+                      ensure food safety and quality standards were met.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Projects -->
+          <section id="projects" class="mb-4">
+            <div class="card bg-dark shadow-sm">
+              <div class="card-body">
+                <h2 class="section-title">
+                  <i class="fa-solid fa-diagram-project me-2"></i>Projects
+                </h2>
+                <!-- Portfolio Website -->
+                <div class="mb-4">
+                  <h3 class="h5 fw-bold mb-1">
+                    <i class="fa-solid fa-globe me-2"></i>Portfolio Website
+                  </h3>
+                  <p class="mb-1">
+                    Built a responsive personal portfolio website using HTML,
+                    CSS, and JavaScript.
+                  </p>
+                  <a
+                    href="https://github.com/CodingWithBram/Portfolio-Website"
+                    target="_blank"
+                    class="link-dark"
+                    ><i class="fa-brands fa-github me-1"></i>View on
+                    GitHub</a
+                  >
+                </div>
+                <!-- CJTF-R Discord Bot -->
+                <div class="mb-4">
+                  <h3 class="h5 fw-bold mb-1">
+                    <i class="fa-brands fa-discord me-2"></i>CJTF‑R Discord
+                    Bot
+                  </h3>
+                  <p class="mb-1">
+                    Developed a Discord bot in TypeScript with custom
+                    commands and event handling.
+                  </p>
+                  <a
+                    href="https://github.com/CodingWithBoris/CJTF-R"
+                    target="_blank"
+                    class="link-dark"
+                    ><i class="fa-brands fa-github me-1"></i>View on
+                    GitHub</a
+                  >
+                </div>
+                <!-- Chillers Discord Bot -->
+                <div>
+                  <h3 class="h5 fw-bold mb-1">
+                    <i class="fa-brands fa-discord me-2"></i>Chillers Discord
+                    Bot
+                  </h3>
+                  <p class="mb-1">
+                    Built a TypeScript Discord bot focused on moderation and
+                    utilities, featuring command parsing, event‑driven handlers,
+                    and configurable persistent settings.
+                  </p>
+                  <a
+                    href="https://github.com/CodingWithBoris/Chillers-Bot"
+                    target="_blank"
+                    class="link-dark"
+                    ><i class="fa-brands fa-github me-1"></i>View on
+                    GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start mt-5 py-4">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <!-- Footer logo and description -->
+          <div class="col-md-4 text-center text-md-start">
+            <div
+              class="d-flex align-items-center justify-content-center justify-content-md-start mb-2"
+            >
+              <!-- Placeholder for the favicon. -->
+              <img
+                src="../assets/img/favicon.ico"
+                alt="Site logo"
+                width="40"
+                height="40"
+                class="me-2"
+              />
+              <div>
+                <h5 class="mb-0">Bram Willems</h5>
+                <small>Front‑end Developer & Programmer</small>
+              </div>
+            </div>
+          </div>
+          <!-- Footer contact -->
+          <div class="col-md-4 text-center">
+            <h6 class="fw-bold">Contact</h6>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-1">
+                <a
+                  href="mailto:r1100223@student.thomasmore.be"
+                  class="link-dark"
+                  ><i class="fa-solid fa-envelope me-1"></i> Email</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/CodingWithBram"
+                  target="_blank"
+                  class="link-dark"
+                  ><i class="fa-brands fa-github me-1"></i> GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Footer social links -->
+          <div class="col-md-4 text-center text-md-end">
+            <h6 class="fw-bold">Follow Me</h6>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-1">
+                <a
+                  href="https://github.com/CodingWithBram"
+                  target="_blank"
+                  class="link-dark"
+                  ><i class="fa-brands fa-github me-1"></i> GitHub</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  href="https://www.linkedin.com/in/bram-willems-800617385/"
+                  target="_blank"
+                  class="link-dark"
+                  ><i class="fa-brands fa-linkedin me-1"></i> LinkedIn</a
+                >
+              </li>
+              <li>
+                <a href="#" target="_blank" class="link-dark"
+                  ><i class="fa-brands fa-twitter me-1"></i> Twitter</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4 small text-muted">
+        © <span id="currentYear"></span> Bram Willems. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Wv5Lq7NElIcuu1T1edEE6q6XEI/5O857tj4RHf5SP4DrDJR97YmmCBI6MhK4IerG"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
